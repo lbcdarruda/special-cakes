@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Created by: LUCIANA BARRETO CUNHA DE ARRUDA -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact :: Special Cakes for all Occasions</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header id="PageHeader">
+            <div class="header-top">
+                <a class="logo" href="index.html"><img src="images/logo.png" alt="Special Cakes for all Occasions logo" height="71" width="298"></a>
+
+                <nav class="horizontal-menu" id="PageNavigation">
+                    <ul>
+                        <li ><a href="index.html">HOME</a></li>
+                        <li><a href="sale.html">CAKES FOR SALE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li class="current"><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img class="banner" src="images/redRoseCake1200.jpg" alt="A cake with a red rose on top" width="1200" height="360">
+
+        </header>
+
+        <main id="PageMain" class="typography">
+
+            <h1>Get in touch with us</h1>
+            
+            <form action="mailto:specialcakes@email.com" method="post">
+                <div class="inline-row">
+                    <label for="InputName">Name:*</label>
+                    <input type="text" id="InputName" name="name" value="" placeholder="Enter your name here..." required>
+                </div>
+
+                <div class="inline-row">
+                    <label for="InputEmail">Email address:*</label>
+                    <input type="email" id="InputEmail" name="emailAddress" value="" placeholder="Enter your email address here..." required>
+                </div>
+
+                <div class="inline-row">
+                    <label for="InputPhone">Phone:</label>
+                    <input type="tel" id="InputPhone" name="phone" value="" placeholder="Enter your phone number here...">
+                </div>
+
+                <div>
+                    <label for="InputFeedback">Question/ Feedback:</label>
+                    <textarea id="InputFeedback" name="feedback" rows="5"></textarea><br>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form> 
+
+        </main>
+
+        <footer id="PageFooter">
+            <p>&copy; 2026 Luciana Barreto Cunha de Arruda  &middot;<a href="#">Privacy Policy</a></p>
+        </footer>
+    </body>
+</html>

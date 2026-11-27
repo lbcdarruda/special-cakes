@@ -1,0 +1,305 @@
+/*Design Tokens*/
+:root {
+    --brand-white: #FFFFFF;
+    --brand-burnt-red: #E94D40;
+    --brand-navy-blue: #0C243C;
+    --brand-dark-burnt-red: #D9362B;
+    --brand-light-blue: #e5f5fa;
+    --brand-gray: #666666;
+}
+
+/* Browser Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--brand-white);
+    color: var(--brand-navy-blue);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#PageHeader {
+    background-color: var(--brand-navy-blue);
+    padding-bottom: 20px;
+}
+
+#PageHeader .header-top {
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
+    background-color: var(--brand-white);
+}
+
+#PageHeader .banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;    
+    width: 100%;
+    background-color: var(--brand-navy-blue);
+}
+
+#PageMain {
+    margin: 0 auto;
+    max-width: 1200px;  
+    padding: 20px;
+}
+
+#PageFooter {
+    color: var(--brand-white);
+    background-color: var(--brand-navy-blue);
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+#PageFooter a:link,
+#PageFooter a:visited {
+    color: var(--brand-white);
+    text-decoration: underline;
+}
+
+#PageFooter a:hover,
+#PageFooter a:active {
+    color: var(--brand-light-blue);
+    text-decoration: none;
+}
+
+/*Horizontal Menu*/
+.horizontal-menu ul {
+    display: flex;
+        
+}
+.horizontal-menu ul li {
+    display: block;
+}
+
+.typography h1, 
+.typography h2 {
+    font-size: 32px;
+    color: var(--brand-burnt-red);
+    margin: 10px 0;
+}
+
+.typography h2 {
+    font-size: 24px;
+}
+
+.typography h3, 
+.typography h4, 
+.typography h5, 
+.typography h6 {
+    font-size: 18px;
+    color: var(--brand-navy-blue);
+    margin-bottom: 10px;
+}
+
+.typography h3 {
+    font-size: 20px;
+}
+
+.typography p,
+.typography address {
+    font-size: 16px;
+    color: var(--brand-navy-blue);
+    margin-bottom: 16px;
+}
+
+.typography p.page-tagline {
+    font-size: 20px;
+    color: var(--brand-navy-blue);
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.typography ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.typography a:link,
+.typography a:visited {
+    color: var(--brand-dark-burnt-red);
+    text-decoration: underline;
+}
+
+.typography a:active,
+.typography a:hover {
+    color: var(--brand-navy-blue);
+    text-decoration: none;
+}
+
+.typography .float-right {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 36%;
+    height: auto;
+}
+
+.typography figcaption {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--brand-gray);
+    padding-top: 10px;
+}
+
+.typography figcaption p {
+    font-size: 16px;
+    font-weight:normal;
+    font-style:normal;
+    color: var(--brand-gray);
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Table */
+.typography table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.typography table.auto-width {
+    width: auto;
+    table-layout: auto;
+}
+
+.typography table caption {
+    text-align: left;
+}
+
+.typography th,
+.typography td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid var(--brand-navy-blue);
+    white-space: nowrap;
+}
+
+.typography th:nth-child(-n+2) {
+    border-right: 1px solid var(--brand-white);
+}
+
+.typography th {
+    background-color: var(--brand-navy-blue);
+    color: var(--brand-white);
+}
+
+.typography td:nth-child(2) {
+    white-space: normal;
+}
+
+.typography tr:nth-child(even) {
+    background-color: var(--brand-light-blue);
+}
+
+/*Card Wrapper*/
+.typography .card-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.typography .card {
+    padding: 10px 0;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: calc(33.333% - 15px);
+    text-align: center;
+    border: 1px solid var(--brand-navy-blue);
+}
+
+.typography .card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#PageHeader .horizontal-menu a:link,
+#PageHeader .horizontal-menu a:visited {
+    border-radius: 4px;
+    color: var(--brand-navy-blue);
+    display: block;
+    font-size: 14px;
+    padding: 10px 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#PageHeader .horizontal-menu a:active,
+#PageHeader .horizontal-menu a:hover {
+    color: var(--brand-white);
+    background-color: var(--brand-gray);
+    text-decoration: none;
+}
+
+#PageHeader .horizontal-menu .current a {
+    background-color: var(--brand-dark-burnt-red);
+    color: var(--brand-white);
+    text-decoration: none;
+}
+
+/* Form Styling*/
+form {
+    background: var(--brand-light-blue);
+    padding: 15px 20px;
+    width: 100%;
+}
+
+form > div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input,
+form select {
+    font-size: 16px;
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+form > div.inline-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+form > div.inline-row label {
+    flex: 0 0 150px;
+    padding-right: 10px;
+}
+
+form > div.inline-row input,
+form > div.inline-row select {
+    flex: 1 1 auto;
+}
+
+form input[type="submit"] {
+    background: var(--brand-dark-burnt-red);
+    color: var(--brand-white);
+    border-width: 0;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:active {
+    background: var(--brand-burnt-red);
+}
